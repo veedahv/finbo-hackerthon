@@ -1,0 +1,343 @@
+{
+    "intent":[
+       {
+          "id":9081588041,
+          "tag":"buyAirtime",
+          "questions":[
+             "i want to buy airtime",
+             "how can i purchase airtime",
+             "recharge my phone",
+             "send me airtime"
+          ],
+          "answer":[
+             "to purchase airtime from Gtbank type 'GTB:Airtime'<br> to purchase airtime from First Bank type 'First Bank : Airtime'<br>"
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"bankName",
+          "leastPercentage":0.4
+       },
+       {
+          "id":9081588042,
+          "tag":"airtimePurchase",
+          "questions":[
+             "GTB:Airtime"
+          ],
+          "answer":[
+             "dail *737*amount*<br> to purchase airtime with GTBank<br> NOTE:You must use a number that is registered with GtBank online banking"
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"",
+          "leastPercentage":0.9
+       },
+       {
+          "id":2628611090,
+          "tag":"greetings",
+          "questions":[
+             "what can you do",
+             "help",
+             "good Afternoon",
+             "Afternoon",
+             "good pm"
+          ],
+          "answer":[
+             "Good <% period %> <% username %>,<br>hope you had a nice day.<br>Here are a list of things i can help you do.<br>1)make and airtime purchase<br>2)check your account balance<br>3)analyse your expenses with seven (7) days befor now <br>3)make transfer to another account<br>4)i can also help you with all customer care related issue<br><br>please type 'menu' at anytime to see a list of keyword for each activities i can help you with..."
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"",
+          "leastPercentage":0.4
+       },
+       {
+          "id":2628611091,
+          "tag":"menu",
+          "questions":[
+             "menu"
+          ],
+          "answer":[
+             "Type in any of the Keywords to get info on any of the keyword:<br> Airtime ==> to  purchase airtime from your bank<br>Bank Transfer => to transfer money to a recepient account<br>Check Balance ==> to check your bank account balance<br>My Expenses => to check your expenses within the week<br>News ==> to check the latest new from your bank<br>Help => to get help"
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"",
+          "leastPercentage":0.9
+       },
+       {
+          "id":2628611092,
+          "tag":"airtimePurchase",
+          "questions":[
+             "First Bank:Airtime"
+          ],
+          "answer":[
+             "dail *894*amount# to purchase airtime <br>to make purchase for a friend dail<br>*894*amount*phone number#"
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"",
+          "leastPercentage":0.9
+       },
+       {
+          "id":3094925892,
+          "tag":"checkAccount",
+          "questions":[
+             "Check Balance",
+             "my balance",
+             "show balance",
+             "show me my BVN number",
+             "showBvn"
+          ],
+          "answer":[
+             "showAccountBalance"
+          ],
+          "link":0,
+          "mimeType":"text/html",
+          "props":"",
+          "leastPercentage":0.6,
+          "functionName":"account"
+       },
+       {
+          "id":3094925893,
+          "tag":"update",
+          "questions":[
+             "change my username",
+             "i want to change my username",
+             "how can i change my username",
+             "help me change my username"
+          ],
+          "answer":[
+             "please enter your old username"
+          ],
+          "link":3094925894,
+          "mimeType":"text/plain",
+          "props":"oldUsername",
+          "leastPercentage":0.7
+       },
+       {
+          "id":3094925894,
+          "tag":"update",
+          "questions":[
+             "please enter your new username"
+          ],
+          "answer":[
+             "please enter your new username"
+          ],
+          "link":3094925895,
+          "mimeType":"text/plain",
+          "props":"newUsername",
+          "leastPercentage":0.9
+       },
+       {
+          "id":3094925895,
+          "tag":"update",
+          "questions":[
+             "please re-enter your new username"
+          ],
+          "answer":[
+             "please re-enter your new username"
+          ],
+          "link":3094925896,
+          "mimeType":"text/plain",
+          "props":"reUsername",
+          "leastPercentage":1.0
+       },
+       {
+          "id":3094925896,
+          "tag":"update",
+          "questions":[
+             ""
+          ],
+          "answer":[
+             "updateUsername"
+          ],
+          "link":0,
+          "mimeType":"text/html",
+          "props":"",
+          "leastPercentage":0.5
+       },
+       {
+          "id":2484080254,
+          "tag":"question",
+          "questions":[
+             "check my bvn",
+             "show me my BVN number",
+             "what is my BVN number",
+             "BVN number"
+          ],
+          "answer":[
+             "enter the last 4 digit of your ATM Card number"
+          ],
+          "link":2484080255,
+          "mimeType":"text/plain",
+          "props":"lastAtm4digit",
+          "leastPercentage":0.8
+       },
+      
+       {
+          "id":1491048043,
+          "tag":"expenses",
+          "questions":[
+             "my expenses",
+             "how much have i spend so far",
+             "whats my expenses",
+             "show me my expenses",
+             "whats my spending"
+          ],
+          "answer":[
+             "showExpenses"
+          ],
+          "link":0,
+          "mimeType":"text/html",
+          "props":"",
+          "leastPercentage":0.9
+       },
+       {
+          "id":1191354054,
+          "tag":"question",
+          "questions":[
+             "whats my name",
+             "whats my username",
+             "show my username",
+             "tell me my username",
+             "what is my name",
+             "tell me my name"
+          ],
+          "answer":[
+             "Your username is '<% username %>'"
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"",
+          "leastPercentage":0.9
+       },
+       {
+          "id":1892577180,
+          "tag":"bankTranser",
+          "questions":[
+             "bank transfer",
+             "i want to make a transfer",
+             "make transfer",
+             "want to send money to a friend",
+             "send funds to a friend",
+             "how do i send cash to a friend",
+             "make a transfer"
+          ],
+          "answer":[
+             "enter an account number to make transfer to"
+          ],
+          "link":1892577181,
+          "mimeType":"text/plain",
+          "props":"recieverAccount",
+          "leastPercentage":0.9
+       },
+       {
+          "id":1892577181,
+          "tag":"bankTranser",
+          "questions":[
+             ""
+          ],
+          "answer":[
+             "enter the amount"
+          ],
+          "link":1892577182,
+          "mimeType":"text/plain",
+          "props":"amount",
+          "leastPercentage":0.9
+       },
+       {
+          "id":1892577182,
+          "tag":"bankTranser",
+          "questions":[
+             ""
+          ],
+          "answer":[
+             "showBankList"
+          ],
+          "link":1892577183,
+          "mimeType":"text/html",
+          "props":"bank",
+          "leastPercentage":0.9
+       },
+       {
+          "id":1892577183,
+          "tag":"bankTranser",
+          "questions":[
+             ""
+          ],
+          "answer":[
+             "confirmTransfer"
+          ],
+          "link":1892577184,
+          "mimeType":"text/html",
+          "props":"confirmed",
+          "leastPercentage":0.8
+       },
+       {
+          "id":1892577184,
+          "tag":"bankTranser",
+          "questions":[
+             ""
+          ],
+          "answer":[
+             "paymentCompleted"
+          ],
+          "link":0,
+          "mimeType":"text/html",
+          "props":"",
+          "leastPercentage":0.9
+       },
+       {
+          "id":2909576869,
+          "tag":"greetings",
+          "questions":[
+             "thanks",
+             "thank you",
+             "tahnks alot",
+             "am grateful",
+             "am glad",
+             "am happy"
+          ],
+          "answer":[
+             "You are welcome"
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"",
+          "leastPercentage":0.6
+       },
+       {
+          "id":1987560267,
+          "tag":"question",
+          "questions":[
+             "is my bvn secure"
+          ],
+          "answer":[
+             "yes your bvn is secure"
+          ],
+          "link":0,
+          "mimeType":"text/plain",
+          "props":"",
+          "leastPercentage":0.3
+       },
+       
+       {
+          "id":3188888888,
+          "tag":"account",
+          "questions":[
+             "show me my debit transaction information",
+             "my debit transaction information",
+             "my debit information",
+             "my account information: debit"
+          ],
+          "answer":[
+             "debit"
+          ],
+          "link":0,
+          "mimeType":"text/html",
+          "props":"",
+          "leastPercentage":0.3,
+          "functionName":"debit"
+       }
+       
+    ]
+ }

@@ -1,3 +1,8 @@
+:root {
+  --primary: #4374ba;
+  --secondary: #8cbee7;
+}
+
 * {
   scroll-behavior: smooth;
 }

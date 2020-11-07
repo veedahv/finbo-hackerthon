@@ -1,6 +1,14 @@
+:root {
+    --primary: #4374ba;
+    --secondary: #8cbee7;
+  }
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--secondary);
+}
+.btn {
+    background-color: var(--primary);
+    border: none !important;
 }
 .login-form {
     max-width: 550px;

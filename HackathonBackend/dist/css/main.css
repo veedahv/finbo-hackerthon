@@ -1,0 +1,12 @@
+/* No CSS */
+
+.balance-contain {
+    width: 200px;
+}
+table {
+    border-collapse: collapse;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--secondary);
+    color: var(--white);
+}
